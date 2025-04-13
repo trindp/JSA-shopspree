@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shopping Page</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <script defer src="../scripts/script.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="shop-name-container">
+        <div class="shop-name">Shopspree</div>
+      </div>
+
+      <div class="search-container">
+        <input
+          type="text"
+          class="search-bar"
+          id ="search-bar"
+          placeholder="Search products..."
+        />
+      </div>
+
+      <div class="buttons-container">
+        <button class="nav-btn language-btn">Language</button>
+        <button class="nav-btn cart-btn">Cart</button>
+        <button class="nav-btn profile-btn">Profile</button>
+        <button class="nav-btn theme-btn">Theme</button>
+        <button class="nav-btn sign-out-btn">Sign out</button>
+      </div>
+    </nav>
+
+    <div class="sub-nav">
+      <a href="#">Home</a>
+      <a href="#">Today's Deals</a>
+      <a href="#">Gift Card</a>
+      <a href="#">Customer Service</a>
+      <div class="subnavspace"></div>
+    </div>
+
+    
+  </header>
+
+  <main>
+    <div class="category-container">
+      <button class="category-btn">Electronics</button>
+      <button class="category-btn">Gadgets</button>
+      <button class="category-btn">Makeup</button>
+      <button class="category-btn">Giftcards</button>
+    </div>
+
+    <div class="sale-container">
+      <div class="sale-item">Sale Program 1</div>
+      <div class="sale-item">Sale Program 2</div>
+      <div class="sale-item">Sale Program 3</div>
+      <div class="sale-item">Sale Program 4</div>
+      <div class="sale-item">Sale Program 5</div>
+    </div>
+  </main>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const searchBar = document.getElementById("search-bar");
+      if (searchBar) {
+        searchBar.addEventListener("keyup", (e) => {
+          if (e.key === "Enter") {
+            const query = searchBar.value.trim();
+            if (query) {
+              window.location.href = `itempage.html`;
+            }
+          }
+        });
+      }
+    });
+  </script>
+  
+</body>
+</html>

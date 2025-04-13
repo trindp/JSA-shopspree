@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Item Page</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="shop-name-container">
+        <a href="main.html" class="shop-name">Shopspree</a>
+      </div>
+
+      <div class="search-container">
+        <input
+          type="text"
+          class="search-bar"
+          placeholder="Search products..."
+          id="search-bar"
+        />
+      </div>
+
+      <div class="buttons-container">
+        <button class="nav-btn language-btn">Language</button>
+        <button class="nav-btn cart-btn">Cart</button>
+        <button class="nav-btn profile-btn">Profile</button>
+        <button class="nav-btn theme-btn">Theme</button>
+        <button class="nav-btn sign-out-btn">Sign out</button>
+      </div>
+    </nav>
+
+    <div class="sub-nav">
+      <a href="main.html">Home</a>
+      <a href="#">Today's Deals</a>
+      <a href="#">Gift Card</a>
+      <a href="#">Customer Service</a>
+      <div class="subnavspace"></div>
+    </div>
+  </header>
+
+  <main>
+    <div class="filter-sidebar">
+      <h3>Filters</h3>
+      <label for="price">Price Range:</label>
+      <input type="number" id="min-price" placeholder="Min">
+      <input type="number" id="max-price" placeholder="Max">
+
+      <label for="ratings">Ratings:</label>
+      <select id="ratings">
+        <option value="all">All</option>
+        <option value="4">4 Stars & Up</option>
+        <option value="3">3 Stars & Up</option>
+        <option value="2">2 Stars & Up</option>
+      </select>
+    </div>
+
+    <div class="items-container">
+    </div>
+
+    <div class="pagination-container"></div>
+  </main>
+
+  <script defer src="../scripts/script.js"></script>
+</body>
+</html>

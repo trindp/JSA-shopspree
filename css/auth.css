@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2bc98b;
+  }
+  
+  .auth-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+  }
+  
+  .auth-box h2 {
+    margin-bottom: 15px;
+  }
+  
+  .input-group {
+    margin: 10px 0;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .switch {
+    margin-top: 10px;
+  }
+  
+  .switch a {
+    color: #0073e6;
+    text-decoration: none;
+  }
+  
+  .switch a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /* Google Font */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+  
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      transition: background 0.3s ease-in-out;
+      background-color: #2bc98b;
+  }
+  
+  .container {
+        background: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+        width: 350px;
+        text-align: center;
+  }
+  
+  .form-box h2 {
+      margin-bottom: 1rem;
+      font-weight: 600;
+  }
+  
+  .input-group {
+      margin: 10px 0;
+  }
+  
+  .input-group input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: 0.3s;
+  }
+  
+  .input-group input:focus {
+      border-color: #34e89e;
+      outline: none;
+  }
+  
+  .btn {
+      width: 100%;
+      padding: 12px;
+      background: #34e89e;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+  }
+  
+  .btn:hover {
+      background: #2bc98b;
+  }
+  
+  .switch {
+      margin-top: 10px;
+      font-size: 14px;
+  }
+  
+  .switch a {
+      color: #0f3443;
+      font-weight: bold;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  
+  .switch a:hover {
+      text-decoration: underline;
+  }
+  
+  /* Hides Register Form Initially */
+  .hidden {
+      display: none;
+  }
+  
+  /* Dark Mode */
+  .dark-mode {
+      background: linear-gradient(135deg, #232526, #414345);
+  }
+  
+  .dark-mode .container {
+      background: #333;
+      color: white;
+  }
+  
+  .dark-mode .input-group input {
+      background: #555;
+      color: white;
+      border: 1px solid #777;
+  }
+  
+  .dark-mode .btn {
+      background: #ff9800;
+  }
+  
+  .dark-mode .btn:hover {
+      background: #e68900;
+  }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="shop-name-container">
+        <a href="main.html" class="shop-name">Shopspree</a>
+      </div>
+
+      <div class="search-container">
+        <input type="text" class="search-bar" placeholder="Search products...">
+      </div>
+
+      <div class="buttons-container">
+        <button class="nav-btn language-btn">Language</button>
+        <button class="nav-btn cart-btn">Cart</button>
+        <button class="nav-btn profile-btn">Profile</button>
+        <button class="nav-btn theme-btn">Theme</button>
+        <button class="nav-btn sign-out-btn">Sign out</button>
+      </div>
+    </nav>
+
+    <div class="sub-nav">
+      <a href="main.html">Home</a>
+      <a href="#">Today's Deals</a>
+      <a href="#">Gift Card</a>
+      <a href="#">Customer Service</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="cart-container">
+        <h2>Shopping Cart</h2>
+        <div class="cart-items">
+        </div>
+        <div class="cart-summary">
+            <h3>Total: $0.00</h3>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+  </main>
+
+  <script src="../scripts/cart.js"></script>
+</body>
+</html>
